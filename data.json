@@ -1,0 +1,116 @@
+{"intents": [
+        {"tag": "greeting",
+         "patterns": ["Hi there", "How are you", "Is anyone there?","Hey","Hola", "Hello","Hi","fine"],
+         "responses": ["Hello, thanks for asking", "How are You?", "Hi there, how can I help?","Hello, Welcome to IFMIS","Hello, Please how may I help you"],
+         "context": [""]
+        },
+        {"tag": "goodbye",
+         "patterns": ["Bye", "See you later", "Goodbye", "Nice chatting to you, bye", "Till next time","okay","never mind"],
+         "responses": ["See you!", "Have a nice day", "Bye! Come back again soon.","Bye, Have a Nice Time","See you"],
+         "context": [""]
+        },
+        {"tag": "thanks",
+         "patterns": ["Thanks", "Thank you", "That's helpful", "Awesome, thanks", "Thanks for helping me","good"],
+         "responses": ["Happy to help!", "Any time!", "My pleasure","Nice time"],
+         "context": [""]
+        },
+        {"tag": "no answer",
+         "patterns": [],
+         "responses": ["Sorry, can't understand you", "Please give me more info", "Not sure I understand"],
+         "context": [""]
+        },
+        {"tag": "what can you do",
+         "patterns": ["what can you do","will you help","help","assist"],
+         "responses": ["Please go ahead and ask your question", "Please give me more info on the issue you're facing"],
+         "context": [""]
+        },
+        {"tag": "password_reset",
+         "patterns": ["reset password?", "Can't remember my password", "Help reset password", "wrong password","password reset"],
+         "responses": ["To reset your password, click on login assistance on the <a href='https://supplier.treasury.go.ke/ '> Supplier Portal </a>new page will open, enter your username and click on forgot password. Check your email for a reset link, click on the link and fill in the username and the new password you would like to use. "],
+         "context": [""]
+        },
+        {"tag": "No email after password reset",
+         "patterns": ["No email after password reset", "No link in email to reset a password", "Link to reset password"],
+         "responses": ["If you've not received a reset password link in your email after resetting your password via Login Assistance, First check your spam folder if the mail is there, if not call our Call center on 0800221416 / 0204801801 for further assistance."],
+         "context": [""]
+        },
+        {"tag": "business_registration",
+         "patterns": ["register as a supplier","business registration","I want an IFMIS number","want to register as a supplier","supplier registration","company registration"],
+         "responses": ["To register as a supplier, visit the <a href='https://supplier.treasury.go.ke/'> Supplier Portal </a>  click on supplier self registration, enter the company registration number and valid KRA pin linked to company and validate the details. If successful the company will be displayed at the top of the page, proceed to fill contact details and click next to categorise your company and submit. Check your email within an hour for a temporary password to login. From there you can see your IFMIS number at the top right corner of the page after logging in. ","To register as a supplier, click on the link below to watch a video on the same <a href='https://www.youtube.com/watch?v=SHF_-zEUlm8'> Supplier Registration </a> "],
+         "context": [""]
+        },
+        {"tag": "responding_to_rfq",
+         "patterns": ["respond to a tender", "respond to an rfq", "create a quote","rfq", "respond to a quotation"],
+         "responses": ["To respond to an RFQ (Request For Quotation) check out this video on Youtube: <a href=https://www.youtube.com/watch?v=SHF_-zEUlm8'> Request For Quotation </a>","Responding to RFQ (Request For Quotation) utilizes the sourcing supplier responsibility, Click on the responsibility and click on sourcing homepage to open the page. Go to open negotiations to find your open negotiations..... "],
+         "context": [""]
+        },
+        {"tag": "business_registration_error",
+         "patterns": ["validation error", "can't register my business", "getting an error when I validate company details", "invalid pin or company registration","business registration error"],
+         "responses": ["If you get an error during validation of the company registration number and the KRA pin, counter-check your pin to see if you've made any typing error. If the pin is correct and you're trying to register a business name, visit KRA offices for them to link your personal pin with the company pin. ","If you get a validation error during registration of a company, counter check the entered values and ensure they are ok, confirm if the pin is VAT registered, or if its linked with the company registration number using the KRA pin checker service. "],
+         "context": [""]
+        },
+        {"tag": "advance_delivery_notice",
+         "patterns": ["adn creation","advance delivery notice","adn (advance delivery notice)","creating adn","creating advance delivery notice"],
+         "responses": ["To create an ADN (Advance Delivery Notice) Click on the New Kenya I supplier Portal Full Access, click on deliveries and click on create Advance Delivery Notice, Select the PO Number of the delivery you would like to create, and click on Add to Deliveries, enter the delivery number and expected delivery date and then submit. ","To create an ADN (Advance Delivery Notice) you can check out our video on Youtube: <a href='https://www.youtube.com/watch?v=BPk8fBpq2kM&t=16s'> Advance Delivery Notice </a> on how to create the Delivery Notice. "],
+         "context": [""]
+        },
+        {"tag": "invoice_creation",
+         "patterns": ["invoice creation", "invoice submission", "creating an invoice", "invoice", "invoice creation and submission" ],
+         "responses": ["To create an Invoice, click on the New Kenya I supplier portal full access, click on Finance, then Click on create Invoices, create invoice with a PO, Enter the PO Number you would like to create an invoice for and click on Go. The PO will populate, select it and add to invoice, click on next to enter your invoice number and attach the scanned invoice, tip: Confirm your Bank Details and the Pin at this Stage.Click continue until you submit the Invoice. ", "To create an invoice watch the following video: <a href='https://youtu.be/4cbSeUMrtXU'> Invoice Creation/Submission </a> the video guides you on how to create an invoice in the IFMIS supplier portal. "],
+         "context": [""]
+        },
+        {"tag": "invoice_error",
+         "patterns": ["invoice error","invoice submission error","i get an error when I submit an invoice"],
+         "responses": ["Invoice error, for a no bank details error, or no KRA pin error, Get in touch with the entity you traded with for them to attach. Note:  Attachment of Bank Details happens at the Entity Level and not at the IFMIS Department Headquarters  "],
+         "context": [""]
+        },
+        {"tag": "email change",
+         "patterns": ["change email", "email change", "email", "change" ],
+         "responses": ["To change an email send an email to info@ifmis.go.ke with a Scanned letter stating the change of email from the current one to a new email, state the IFMIS Number and the name of the company,plus attach the KRA PIN Certificate, Registration Certificate and the ID copy of the person signing that letter. Expect reply within 3 days."],
+         "context": [""]
+        },
+        {"tag": "vpn password",
+         "patterns": ["vpn password", "reset vpn","vpn login error"],
+         "responses": ["For VPN Password reset, send an email to info@ifmis.go.ke, indicate the username and the entity you're working with. "],
+         "context": [""]
+        },
+        {"tag": "vpn creation",
+         "patterns": ["vpn creation", "vpn username","vpn account","vpn"],
+         "responses": ["For VPN account creation, send an email to info@ifmis.go.ke, include your full names, personal number, department or the entity you work with. "],
+         "context": [""]
+        },
+        {"tag": "forgot username",
+        "patterns": ["forgot username","username invalid","find username"],
+         "responses": ["If you forgot your username,On the supplier portal homepage, click on login assistance and under the Forgot UserName section, enter your email address and click on forgot username to receive a username. Check your email address for an email from Workflow Mailer. "],
+         "context": [""]
+        },
+        {"tag": "supplier",
+         "patterns": ["supplier portal"],
+         "responses": ["The Kenya Supplier Portal can be accessed at <a href='https://supplier.treasury.go.ke/'> Supplier Portal </a>"],
+         "context": [""]
+        },
+        {"tag": "ifmis number",
+         "patterns": ["ifmis number","what is an IFMIS number"],
+         "responses": ["The IFMIS Number is a Unique Identifier that a Supplier is given when they register in IFMIS"],
+         "context": [""]
+        },
+        {"tag": "requirements",
+        "patterns": ["requirements for getting an IFMIS number","What is needed to register as a supplier","requirements for registration as a supplier in IFMIS","what i need to register as a supplier"],
+        "responses": ["For successful registration at the IFMIS <a href='https://supplier.treasury.go.ke/'> Supplier Portal </a> you require the following \t a) For Limited Company: KRA Tax PIN and Company Registration Number. \t b) Sole Proprietors: Individual Tax PIN and Business Name Registration Number.\t c) GOK Consultant: Individual Tax PIN and National ID."],
+        "context": [""]
+       },
+       {"tag": "no-reply",
+        "patterns": ["registered yet no reply","have not received an email after registration","rno response after registering as a supplier"],
+        "responses": ["It very important that a user register with the correct email address. The reasons for not getting email a) The email address was wrongly typed. b) The user forgot the email used to register. c) The email is going to the spam folder. If the user domain is rejecting the mail from the ifmis.go.ke You can contact IFMIS department through sending an email info@ifmis.go.ke or call 0204801801 for assistance. "],
+        "context": [""]
+       },
+       
+
+        
+		{"tag": "IFMIS",
+        "patterns": ["what is IFMIS","IFMIS","tell me about IFMIS", "want to know About IFMIS"],
+         "responses": ["Integrated Financial Management Information System (IFMIS) is an automated system that enhances efficiency in Planning, Budgeting, Procurement, Expenditure Management and Reporting in the National and County Governments in Kenya. IFMIS is operational in both the National and County Governments. The system guarantees that each expense is traceable, delivering optimal value to every Taxpayer. \n VISION: An excelently secure, reliable, efficient, effective, and fully integrated financial management. \n MISSION: To Passionately and with commitment continuosly enhance our capture our capacities to innovate and leverage on the best technology to provide for a fully integrated financial management"],
+         "context": [""]
+        }
+   ]
+}
